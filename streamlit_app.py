@@ -7,7 +7,7 @@ st.title("SuperKart Sales Forecast")
 
 api_root = st.sidebar.text_input("Backend URL", "http://backend:7860")
 
-with st.st.form("forecast_form") if hasattr(st, "form") else st.form("forecast_form"):
+with st.form("forecast_form") if hasattr(st, "form") else st.form("forecast_form"):
     payload = {
         "Product_Weight": st.number_input("Product Weight", value=12.66),
         "Product_Sugar_Content": st.selectbox("Sugar Content", ["Low Sugar", "Regular", "No Sugar"]),
