@@ -1,0 +1,15 @@
+{
+  "name": "SuperKart Deployment Container",
+  "forwardPorts": [7860, 8501],
+  "portsAttributes": {
+    "7860": {
+      "label": "Flask Backend REST API",
+      "onAutoForward": "notify",
+      "visibility": "public"
+    },
+    "8501": {
+      "label": "Streamlit Interactive Frontend",
+      "onAutoForward": "silent"
+    }
+  }
+}
